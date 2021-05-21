@@ -16,6 +16,8 @@
 		3F37CD802657AA870072009E /* Werkstuk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD7F2657AA870072009E /* Werkstuk1Tests.swift */; };
 		3F37CD8B2657AA870072009E /* Werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD8A2657AA870072009E /* Werkstuk1UITests.swift */; };
 		3F37CD9D2657AA9A0072009E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F37CD9C2657AA9A0072009E /* MapKit.framework */; };
+		3F938C0E2657C02400B47861 /* VaccinatieCentrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C0D2657C02400B47861 /* VaccinatieCentrum.swift */; };
+		3F938C132657C09100B47861 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C122657C09100B47861 /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3F37CD8A2657AA870072009E /* Werkstuk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1UITests.swift; sourceTree = "<group>"; };
 		3F37CD8C2657AA870072009E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F37CD9C2657AA9A0072009E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F938C0D2657C02400B47861 /* VaccinatieCentrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinatieCentrum.swift; sourceTree = "<group>"; };
+		3F938C122657C09100B47861 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				3F37CD712657AA870072009E /* Assets.xcassets */,
 				3F37CD732657AA870072009E /* LaunchScreen.storyboard */,
 				3F37CD762657AA870072009E /* Info.plist */,
+				3F938C0D2657C02400B47861 /* VaccinatieCentrum.swift */,
+				3F938C122657C09100B47861 /* Address.swift */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -270,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F938C132657C09100B47861 /* Address.swift in Sources */,
 				3F37CD6D2657AA850072009E /* ViewController.swift in Sources */,
 				3F37CD692657AA850072009E /* AppDelegate.swift in Sources */,
 				3F37CD6B2657AA850072009E /* SceneDelegate.swift in Sources */,
+				3F938C0E2657C02400B47861 /* VaccinatieCentrum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
