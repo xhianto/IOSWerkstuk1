@@ -14,8 +14,8 @@ class LijstCentrumsVC: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //LijstCentrum.shared.lijst
-        let address5 = Address(street: "Pachecolaan", number: "42", postalCode: "1000", city: "Brussel")
-        let centrum5 = VaccinatieCentrum(title: "Test- en vaccinatiecentrum", image: "Brussel", address: address5, coordinate: CLLocationCoordinate2D(latitude: 50.85324049747469, longitude: 4.362446384072508), phone: "")
+        let address5 = Address(street: "Pachecolaan", number: "42", postalCode: "1000", city: "Tester")
+        let centrum5 = VaccinatieCentrum(title: "Tester", image: "Hospital", address: address5, coordinate: CLLocationCoordinate2D(latitude: 50.84324049747469, longitude: 4.332446384072508), phone: "")
         
         LijstCentrum.shared.lijst.append(centrum5)
     }
@@ -28,6 +28,7 @@ class LijstCentrumsVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CentrumCell", for: indexPath)
         cell.textLabel?.text = LijstCentrum.shared.lijst[indexPath.row].title
         cell.detailTextLabel?.text = LijstCentrum.shared.lijst[indexPath.row].address.city
+        //cell.imageView?.image = UIImage(named: LijstCentrum.shared.lijst[indexPath.row].image)
         
         return cell
     }

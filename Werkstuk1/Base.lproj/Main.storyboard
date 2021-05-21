@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CentrumCell" textLabel="3qB-mH-ybk" detailTextLabel="7hR-LE-f5i" style="IBUITableViewCellStyleSubtitle" id="3Lm-eQ-Ab9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CentrumCell" textLabel="3qB-mH-ybk" detailTextLabel="tee-TL-dJq" style="IBUITableViewCellStyleSubtitle" id="3Lm-eQ-Ab9">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Lm-eQ-Ab9" id="5sP-Y8-eXg">
@@ -31,7 +31,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7hR-LE-f5i">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tee-TL-dJq">
                                             <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -212,10 +212,24 @@
                     <view key="view" contentMode="scaleToFill" id="vK6-R4-beI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAx-i2-dTo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R3Q-K4-4qQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bAx-i2-dTo" firstAttribute="leading" secondItem="R3Q-K4-4qQ" secondAttribute="leading" id="4gx-yB-lSn"/>
+                            <constraint firstItem="R3Q-K4-4qQ" firstAttribute="bottom" secondItem="bAx-i2-dTo" secondAttribute="bottom" id="9C2-7b-ebL"/>
+                            <constraint firstItem="bAx-i2-dTo" firstAttribute="top" secondItem="R3Q-K4-4qQ" secondAttribute="top" id="Fay-Yh-H13"/>
+                            <constraint firstItem="R3Q-K4-4qQ" firstAttribute="trailing" secondItem="bAx-i2-dTo" secondAttribute="trailing" id="Wnw-2N-fyf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="Z0d-8c-Uc2"/>
+                    <connections>
+                        <outlet property="myMapView" destination="bAx-i2-dTo" id="OEN-ET-5SA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMU-oZ-nfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

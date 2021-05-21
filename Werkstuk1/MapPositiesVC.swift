@@ -10,8 +10,17 @@ import CoreLocation
 import MapKit
 
 class MapPositiesVC: UIViewController, MKMapViewDelegate {
+    
+    @IBOutlet weak var myMapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        for centrum in LijstCentrum.shared.lijst {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = centrum.coordinate
+            self.myMapView.addAnnotation(annotation)
+            self.myMapView.selectAnnotation(annotation, animated: true)
+        }
     }
 }
 
