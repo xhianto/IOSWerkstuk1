@@ -101,11 +101,11 @@
             </objects>
             <point key="canvasLocation" x="150.72463768115944" y="89.732142857142847"/>
         </scene>
-        <!--Item-->
+        <!--Vaccine Centrums-->
         <scene sceneID="sEJ-mO-6VF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bD2-1i-cPo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ULB-BE-5HF"/>
+                    <tabBarItem key="tabBarItem" title="Vaccine Centrums" image="list.bullet" catalog="system" id="ULB-BE-5HF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TlO-WO-IbP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="1067" y="90"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="eZV-yM-Gzu">
             <objects>
                 <viewController id="baR-uy-gok" customClass="MapPositiesVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,7 +130,7 @@
                         <viewLayoutGuide key="safeArea" id="R3Q-K4-4qQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Z0d-8c-Uc2"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="Z0d-8c-Uc2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMU-oZ-nfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +138,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
