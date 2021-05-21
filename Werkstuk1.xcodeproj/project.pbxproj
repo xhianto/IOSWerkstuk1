@@ -15,6 +15,7 @@
 		3F37CD752657AA870072009E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F37CD732657AA870072009E /* LaunchScreen.storyboard */; };
 		3F37CD802657AA870072009E /* Werkstuk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD7F2657AA870072009E /* Werkstuk1Tests.swift */; };
 		3F37CD8B2657AA870072009E /* Werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD8A2657AA870072009E /* Werkstuk1UITests.swift */; };
+		3F37CD9D2657AA9A0072009E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F37CD9C2657AA9A0072009E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F37CD862657AA870072009E /* Werkstuk1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Werkstuk1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F37CD8A2657AA870072009E /* Werkstuk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1UITests.swift; sourceTree = "<group>"; };
 		3F37CD8C2657AA870072009E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F37CD9C2657AA9A0072009E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F37CD9D2657AA9A0072009E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				3F37CD7E2657AA870072009E /* Werkstuk1Tests */,
 				3F37CD892657AA870072009E /* Werkstuk1UITests */,
 				3F37CD662657AA850072009E /* Products */,
+				3F37CD9B2657AA9A0072009E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				3F37CD8C2657AA870072009E /* Info.plist */,
 			);
 			path = Werkstuk1UITests;
+			sourceTree = "<group>";
+		};
+		3F37CD9B2657AA9A0072009E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F37CD9C2657AA9A0072009E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
