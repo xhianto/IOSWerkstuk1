@@ -31,5 +31,13 @@ class LijstCentrumsVC: UITableViewController {
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is CentrumDetailVC{
+            let centrumVC = segue.destination as? CentrumDetailVC
+            let indexPath = self.tableView.indexPathForSelectedRow
+            centrumVC?.centrum = LijstCentrum.shared.lijst[(indexPath?.row)!]
+        }
+    }
 }
 
