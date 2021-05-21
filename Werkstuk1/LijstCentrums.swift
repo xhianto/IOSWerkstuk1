@@ -22,7 +22,7 @@ final class LijstCentrum {
         
         let centrum1 = VaccinatieCentrum(title: "RSCA", image: "Anderlecht", address: address1, coordinate: CLLocationCoordinate2D(latitude: 50.83491506947994, longitude: 4.2987749264001245), phone: "")
         let centrum2 = VaccinatieCentrum(title: "Molenbeek", image: "Molenbeek", address: address2, coordinate: CLLocationCoordinate2D(latitude: 50.86004345193222, longitude: 4.3074399398939205), phone: "")
-        let centrum3 = VaccinatieCentrum(title: "Test- en vaccinatatiecentrum Albert", image: "Vorst", address: address3, coordinate: CLLocationCoordinate2D(latitude: 50.820939949404824, longitude: 4.34079373989214), phone: "")
+        let centrum3 = VaccinatieCentrum(title: "Test- en vaccinatiecentrum Albert", image: "Vorst", address: address3, coordinate: CLLocationCoordinate2D(latitude: 50.820939949404824, longitude: 4.34079373989214), phone: "")
         let centrum4 = VaccinatieCentrum(title: "Test- en vaccinatiecentrum", image: "Brussel", address: address4, coordinate: CLLocationCoordinate2D(latitude: 50.85324049747469, longitude: 4.362446384072508), phone: "")
         
         lijst.append(centrum1)
