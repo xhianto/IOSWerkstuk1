@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F37CD692657AA850072009E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD682657AA850072009E /* AppDelegate.swift */; };
 		3F37CD6B2657AA850072009E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD6A2657AA850072009E /* SceneDelegate.swift */; };
-		3F37CD6D2657AA850072009E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD6C2657AA850072009E /* ViewController.swift */; };
+		3F37CD6D2657AA850072009E /* LijstCentrumsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37CD6C2657AA850072009E /* LijstCentrumsVC.swift */; };
 		3F37CD702657AA850072009E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F37CD6E2657AA850072009E /* Main.storyboard */; };
 		3F37CD722657AA870072009E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F37CD712657AA870072009E /* Assets.xcassets */; };
 		3F37CD752657AA870072009E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F37CD732657AA870072009E /* LaunchScreen.storyboard */; };
@@ -18,6 +18,9 @@
 		3F37CD9D2657AA9A0072009E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F37CD9C2657AA9A0072009E /* MapKit.framework */; };
 		3F938C0E2657C02400B47861 /* VaccinatieCentrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C0D2657C02400B47861 /* VaccinatieCentrum.swift */; };
 		3F938C132657C09100B47861 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C122657C09100B47861 /* Address.swift */; };
+		3F938C212657C69A00B47861 /* CentrumDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C202657C69A00B47861 /* CentrumDetailVC.swift */; };
+		3F938C262657C6C600B47861 /* CentrumToevoegenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C252657C6C600B47861 /* CentrumToevoegenVC.swift */; };
+		3F938C2B2657C6DC00B47861 /* MapPositiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C2A2657C6DC00B47861 /* MapPositiesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,7 @@
 		3F37CD652657AA850072009E /* Werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F37CD682657AA850072009E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F37CD6A2657AA850072009E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F37CD6C2657AA850072009E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F37CD6C2657AA850072009E /* LijstCentrumsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LijstCentrumsVC.swift; sourceTree = "<group>"; };
 		3F37CD6F2657AA850072009E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F37CD712657AA870072009E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F37CD742657AA870072009E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		3F37CD9C2657AA9A0072009E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3F938C0D2657C02400B47861 /* VaccinatieCentrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinatieCentrum.swift; sourceTree = "<group>"; };
 		3F938C122657C09100B47861 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3F938C202657C69A00B47861 /* CentrumDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrumDetailVC.swift; sourceTree = "<group>"; };
+		3F938C252657C6C600B47861 /* CentrumToevoegenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrumToevoegenVC.swift; sourceTree = "<group>"; };
+		3F938C2A2657C6DC00B47861 /* MapPositiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPositiesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +115,16 @@
 			children = (
 				3F37CD682657AA850072009E /* AppDelegate.swift */,
 				3F37CD6A2657AA850072009E /* SceneDelegate.swift */,
-				3F37CD6C2657AA850072009E /* ViewController.swift */,
 				3F37CD6E2657AA850072009E /* Main.storyboard */,
 				3F37CD712657AA870072009E /* Assets.xcassets */,
 				3F37CD732657AA870072009E /* LaunchScreen.storyboard */,
 				3F37CD762657AA870072009E /* Info.plist */,
 				3F938C0D2657C02400B47861 /* VaccinatieCentrum.swift */,
 				3F938C122657C09100B47861 /* Address.swift */,
+				3F37CD6C2657AA850072009E /* LijstCentrumsVC.swift */,
+				3F938C202657C69A00B47861 /* CentrumDetailVC.swift */,
+				3F938C252657C6C600B47861 /* CentrumToevoegenVC.swift */,
+				3F938C2A2657C6DC00B47861 /* MapPositiesVC.swift */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -276,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F938C262657C6C600B47861 /* CentrumToevoegenVC.swift in Sources */,
+				3F938C212657C69A00B47861 /* CentrumDetailVC.swift in Sources */,
 				3F938C132657C09100B47861 /* Address.swift in Sources */,
-				3F37CD6D2657AA850072009E /* ViewController.swift in Sources */,
+				3F37CD6D2657AA850072009E /* LijstCentrumsVC.swift in Sources */,
 				3F37CD692657AA850072009E /* AppDelegate.swift in Sources */,
+				3F938C2B2657C6DC00B47861 /* MapPositiesVC.swift in Sources */,
 				3F37CD6B2657AA850072009E /* SceneDelegate.swift in Sources */,
 				3F938C0E2657C02400B47861 /* VaccinatieCentrum.swift in Sources */,
 			);

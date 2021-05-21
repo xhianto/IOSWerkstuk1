@@ -11,7 +11,7 @@
         <!--Vaccinaties Centrums-->
         <scene sceneID="JEk-mx-vro">
             <objects>
-                <tableViewController id="udF-Vn-GRz" sceneMemberID="viewController">
+                <tableViewController id="udF-Vn-GRz" customClass="LijstCentrumsVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YZa-FJ-fgk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,11 +46,11 @@
             </objects>
             <point key="canvasLocation" x="1971.0144927536232" y="89.732142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Centrum DetailVC-->
         <scene sceneID="hfx-Yu-WAw">
             <objects>
-                <viewController id="5x6-oa-htk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xBt-ql-pqB">
+                <viewController id="5x6-oa-htk" customClass="CentrumDetailVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBt-ql-pqB" customClass="Centrum">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="XMM-VI-6AK"/>
@@ -65,7 +65,7 @@
         <!--Centrum Toevoegen-->
         <scene sceneID="59W-rK-Sk1">
             <objects>
-                <viewController id="yjG-Vp-tLU" sceneMemberID="viewController">
+                <viewController id="yjG-Vp-tLU" customClass="CentrumToevoegenVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KVt-LL-EYW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +88,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZWE-Hl-p73"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iyp-zQ-hHP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -122,7 +123,7 @@
         <!--Item-->
         <scene sceneID="eZV-yM-Gzu">
             <objects>
-                <viewController id="baR-uy-gok" sceneMemberID="viewController">
+                <viewController id="baR-uy-gok" customClass="MapPositiesVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vK6-R4-beI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
