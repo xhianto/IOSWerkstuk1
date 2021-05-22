@@ -11,7 +11,8 @@ import MapKit
 
 class CentrumDetailVC: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var Afbeelding: UIImageView!
+    @IBOutlet weak var ButtonAfbeelding: UIButton!
+    //@IBOutlet weak var Afbeelding: UIImageView!
     @IBOutlet weak var LabelStraatHuisnummer: UILabel!
     @IBOutlet weak var LabelPostcodeStad: UILabel!
     @IBOutlet weak var LabelTelefoon: UILabel!
@@ -24,7 +25,8 @@ class CentrumDetailVC: UIViewController, MKMapViewDelegate {
         LabelStraatHuisnummer.text = "\(centrum.address.street) \(centrum.address.number)"
         LabelPostcodeStad.text = "\(centrum.address.postalCode) \(centrum.address.city)"
         LabelTelefoon.text = centrum.phone
-        Afbeelding.image = UIImage(named: centrum.image)
+        ButtonAfbeelding.setImage(UIImage(named: centrum.image), for: .normal)
+        ButtonAfbeelding.imageView?.contentMode = .scaleAspectFit
         let annotation = MKPointAnnotation()
         annotation.coordinate = centrum.coordinate
         self.CentrumMapView.addAnnotation(annotation)
@@ -36,6 +38,13 @@ class CentrumDetailVC: UIViewController, MKMapViewDelegate {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
         
         mapView.setRegion(region, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is CentrumImageVC {
+            let cImageVC = segue.destination as? CentrumImageVC
+            cImageVC?.image = centrum.image
+        }
     }
 }
 

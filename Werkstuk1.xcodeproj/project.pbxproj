@@ -22,6 +22,7 @@
 		3F938C262657C6C600B47861 /* CentrumToevoegenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C252657C6C600B47861 /* CentrumToevoegenVC.swift */; };
 		3F938C2B2657C6DC00B47861 /* MapPositiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C2A2657C6DC00B47861 /* MapPositiesVC.swift */; };
 		3F938C332657E34100B47861 /* LijstCentrums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F938C322657E34100B47861 /* LijstCentrums.swift */; };
+		3FF01C1E26593BAD00534936 /* CentrumImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF01C1D26593BAD00534936 /* CentrumImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		3F938C252657C6C600B47861 /* CentrumToevoegenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrumToevoegenVC.swift; sourceTree = "<group>"; };
 		3F938C2A2657C6DC00B47861 /* MapPositiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPositiesVC.swift; sourceTree = "<group>"; };
 		3F938C322657E34100B47861 /* LijstCentrums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LijstCentrums.swift; sourceTree = "<group>"; };
+		3FF01C1D26593BAD00534936 /* CentrumImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrumImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				3F938C252657C6C600B47861 /* CentrumToevoegenVC.swift */,
 				3F938C2A2657C6DC00B47861 /* MapPositiesVC.swift */,
 				3F938C322657E34100B47861 /* LijstCentrums.swift */,
+				3FF01C1D26593BAD00534936 /* CentrumImageVC.swift */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				3F938C332657E34100B47861 /* LijstCentrums.swift in Sources */,
 				3F938C262657C6C600B47861 /* CentrumToevoegenVC.swift in Sources */,
+				3FF01C1E26593BAD00534936 /* CentrumImageVC.swift in Sources */,
 				3F938C212657C69A00B47861 /* CentrumDetailVC.swift in Sources */,
 				3F938C132657C09100B47861 /* Address.swift in Sources */,
 				3F37CD6D2657AA850072009E /* LijstCentrumsVC.swift in Sources */,

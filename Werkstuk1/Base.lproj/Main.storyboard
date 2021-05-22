@@ -12,12 +12,12 @@
         <scene sceneID="JEk-mx-vro">
             <objects>
                 <tableViewController id="udF-Vn-GRz" customClass="LijstCentrumsVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YZa-FJ-fgk">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YZa-FJ-fgk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CentrumCell" textLabel="3qB-mH-ybk" detailTextLabel="tee-TL-dJq" style="IBUITableViewCellStyleSubtitle" id="3Lm-eQ-Ab9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CentrumCell" editingAccessoryType="checkmark" textLabel="3qB-mH-ybk" detailTextLabel="tee-TL-dJq" imageView="P4Y-9H-H0T" style="IBUITableViewCellStyleSubtitle" id="3Lm-eQ-Ab9">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Lm-eQ-Ab9" id="5sP-Y8-eXg">
@@ -25,19 +25,23 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3qB-mH-ybk">
-                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                            <rect key="frame" x="138" y="10" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tee-TL-dJq">
-                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <rect key="frame" x="138" y="31.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Anderlecht" id="P4Y-9H-H0T">
+                                            <rect key="frame" x="20" y="0.0" width="103" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -65,15 +69,12 @@
         <!--Centrum DetailVC-->
         <scene sceneID="hfx-Yu-WAw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dee-tC-i9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="5x6-oa-htk" customClass="CentrumDetailVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBt-ql-pqB" customClass="Centrum">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exr-Tf-JJG">
-                                <rect key="frame" x="87" y="141" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xvi-oF-8aW">
                                 <rect key="frame" x="24" y="551" width="366" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -130,22 +131,59 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kqt-xC-cXc">
+                                <rect key="frame" x="66" y="152" width="283" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Anderlecht"/>
+                                <connections>
+                                    <segue destination="wWj-nk-aOR" kind="show" id="EyT-b2-okc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XMM-VI-6AK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="SWA-4j-E2h"/>
                     <connections>
-                        <outlet property="Afbeelding" destination="exr-Tf-JJG" id="91L-FZ-Hym"/>
+                        <outlet property="ButtonAfbeelding" destination="Kqt-xC-cXc" id="ADV-Xy-3bz"/>
                         <outlet property="CentrumMapView" destination="xvi-oF-8aW" id="GKw-hA-uM4"/>
                         <outlet property="LabelPostcodeStad" destination="hrC-ry-Sf3" id="R2p-jy-HW0"/>
                         <outlet property="LabelStraatHuisnummer" destination="GbC-lq-zTS" id="wNr-Zv-2Nf"/>
                         <outlet property="LabelTelefoon" destination="jtG-02-tIz" id="LNo-OE-QIX"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dee-tC-i9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2834.7826086956525" y="89.732142857142847"/>
+        </scene>
+        <!--Centrum ImageVC-->
+        <scene sceneID="Jby-3v-AuM">
+            <objects>
+                <viewController id="wWj-nk-aOR" customClass="CentrumImageVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMN-6y-BRn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AhF-NR-9TU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0QN-Hn-fFg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0QN-Hn-fFg" firstAttribute="trailing" secondItem="AhF-NR-9TU" secondAttribute="trailing" id="DWS-tV-hCO"/>
+                            <constraint firstItem="AhF-NR-9TU" firstAttribute="top" secondItem="0QN-Hn-fFg" secondAttribute="top" id="JTL-5H-k0q"/>
+                            <constraint firstItem="AhF-NR-9TU" firstAttribute="leading" secondItem="0QN-Hn-fFg" secondAttribute="leading" id="Kwe-QL-qOn"/>
+                            <constraint firstItem="0QN-Hn-fFg" firstAttribute="bottom" secondItem="AhF-NR-9TU" secondAttribute="bottom" id="yHL-hI-gyc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="COT-yG-XQP"/>
+                    <connections>
+                        <outlet property="Afbeelding" destination="AhF-NR-9TU" id="JF3-IV-eQp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fT-vn-pZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3788" y="90"/>
         </scene>
         <!--Centrum Toevoegen-->
         <scene sceneID="59W-rK-Sk1">
@@ -237,6 +275,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Anderlecht" width="1075" height="580"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="plus" catalog="system" width="128" height="113"/>

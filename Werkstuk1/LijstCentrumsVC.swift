@@ -28,16 +28,24 @@ class LijstCentrumsVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CentrumCell", for: indexPath)
         cell.textLabel?.text = LijstCentrum.shared.lijst[indexPath.row].title
         cell.detailTextLabel?.text = LijstCentrum.shared.lijst[indexPath.row].address.city
-        //cell.imageView?.image = UIImage(named: LijstCentrum.shared.lijst[indexPath.row].image)
+        cell.imageView?.image = UIImage(named: LijstCentrum.shared.lijst[indexPath.row].image)
+        cell.imageView?.contentMode = .scaleToFill
         
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            LijstCentrum.shared.lijst.remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is CentrumDetailVC{
-            let centrumVC = segue.destination as? CentrumDetailVC
+        if segue.destination is CentrumDetailVC {
+            let cDetailVC = segue.destination as? CentrumDetailVC
             let indexPath = self.tableView.indexPathForSelectedRow
-            centrumVC?.centrum = LijstCentrum.shared.lijst[(indexPath?.row)!]
+            cDetailVC?.centrum = LijstCentrum.shared.lijst[(indexPath?.row)!]
         }
     }
 }
