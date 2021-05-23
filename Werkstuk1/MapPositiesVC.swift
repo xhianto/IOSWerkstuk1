@@ -15,6 +15,10 @@ class MapPositiesVC: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.myMapView.removeAnnotations(self.myMapView.annotations)
         for centrum in LijstCentrum.shared.lijst {
             let annotation = MKPointAnnotation()
             annotation.coordinate = centrum.coordinate
@@ -22,5 +26,5 @@ class MapPositiesVC: UIViewController, MKMapViewDelegate {
             self.myMapView.selectAnnotation(annotation, animated: true)
         }
     }
-}
 
+}
