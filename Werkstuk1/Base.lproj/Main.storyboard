@@ -69,7 +69,6 @@
         <!--Centrum DetailVC-->
         <scene sceneID="hfx-Yu-WAw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dee-tC-i9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="5x6-oa-htk" customClass="CentrumDetailVC" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBt-ql-pqB" customClass="Centrum">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -152,6 +151,7 @@
                         <outlet property="LabelTelefoon" destination="jtG-02-tIz" id="LNo-OE-QIX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dee-tC-i9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2834.7826086956525" y="89.732142857142847"/>
         </scene>
@@ -357,6 +357,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAx-i2-dTo">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <outlet property="delegate" destination="baR-uy-gok" id="X51-0s-AAw"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="R3Q-K4-4qQ"/>
