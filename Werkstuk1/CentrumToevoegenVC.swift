@@ -49,7 +49,6 @@ class CentrumToevoegenVC: UIViewController, MKMapViewDelegate {
                 let lon = placemark?.location?.coordinate.longitude
                 vCentrum.coordinate = CLLocationCoordinate2D(latitude: lat ?? 0, longitude: lon ?? 0)
             }
-            //vCentrum.coordinate = CLLocationCoordinate2D(latitude: 50.84324049747469, longitude: 4.332446384072508)
             LijstCentrum.shared.lijst.append(vCentrum)
             self.navigationController?.popViewController(animated: true)
         }
@@ -58,6 +57,10 @@ class CentrumToevoegenVC: UIViewController, MKMapViewDelegate {
         }
     }
     
+    
+    // Hugo Jordao, UITextField border color
+    // https://stackoverflow.com/questions/1861527/uitextfield-border-color
+    // Geraadpleegd op 22 mei 2021
     func AllesIngevuld() -> Bool {
         var ingevuld = true
         InputNaam.layer.borderWidth = 0

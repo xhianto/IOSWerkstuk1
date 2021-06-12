@@ -32,17 +32,21 @@ class MapPositiesVC: UIViewController, MKMapViewDelegate {
             annotation.coordinate = centrum.coordinate
             annotation.title = centrum.title
             annotation.subtitle = centrum.image
-            //annotation.observationInfo = centrum.image
-            //annotation.ImagaName = centrum.image
             
             self.myMapView.addAnnotation(annotation)
         }
     }
-    
+    	
+    // Nitesh Borad, How to set image on MKAnnotation in MKMapView
+    // https://stackoverflow.com/questions/24527912/how-to-set-image-on-mkannotation-in-mkmapview
+    // Geraadpleegd op 23 mei 2021
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         self.selectedAnnotation = (view.annotation as? MKPointAnnotation)!
         view.canShowCallout = true
         let imView = UIImageView(image: UIImage(named: selectedAnnotation.subtitle!))
+        // Jayaram Ramanarayanan, How can I set max width and height on UIImageView while maintaining 1:1 ratio?
+        // https://stackoverflow.com/questions/45590132/how-can-i-set-max-width-and-height-on-uiimageview-while-maintaining-11-ratio
+        // Geraadpleegd op 23 mei 2021
         imView.frame = CGRect(x: imView.frame.origin.x, y: imView.frame.origin.y, width: 50, height:50)
         view.leftCalloutAccessoryView = imView
     }

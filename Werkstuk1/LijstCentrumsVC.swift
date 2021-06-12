@@ -14,11 +14,6 @@ class LijstCentrumsVC: UITableViewController {
         super.viewDidLoad()
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
-        //LijstCentrum.shared.lijst
-        //let address5 = Address(street: "Pachecolaan", number: "42", postalCode: "1000", city: "Tester")
-        //let centrum5 = VaccinatieCentrum(title: "Tester", image: "Hospital", address: address5, coordinate: CLLocationCoordinate2D(latitude: 50.84324049747469, longitude: 4.332446384072508), phone: "")
-        
-        //LijstCentrum.shared.lijst.append(centrum5)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,13 +29,16 @@ class LijstCentrumsVC: UITableViewController {
         return cell
     }
     
+    // Michael Dorner, Reload UITableView when navigating back?
+    // https://stackoverflow.com/questions/3747842/reload-uitableview-when-navigating-back
+    // Geraadpleegd op 22 mei 2021
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
     }
     
-    /*
-     Voor delete: http://www.youtube.com/watch?v=5QdAPoFYBqM
-     */
+    // Let Create An App, Editing Style in TableView in Xcode9.0 (Swift 4.0)
+    // http://www.youtube.com/watch?v=5QdAPoFYBqM
+    // Geraadpleegd op 22 mei 2021
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             LijstCentrum.shared.lijst.remove(at: indexPath.row)
